@@ -1,25 +1,18 @@
 
 <html>
-
-
     <script>
-        function populateDiv(){
-                const a=document.getElementById("first_number").value;
-                const b=document.getElementById("Second_number").value;  
-                const element=document.getElementById("finalsum");
-
-                element.innerHTML=parseInt(a)+parseInt(b)
-
+        function PopulateDiv(){
+            const a=document.getElementById("First").value
+            const b=document.getElementById("Second").value
+            const element=document.getElementById("Finalsum")
+            element.innerHTML=parseInt(a)+parseInt(b)
 
         }
     </script>
-<body>
-    <input id="first_number" type="text" placeholder="first number"><br>
-
-    <input id="Second_number" type="text" placeholder="second number"><br>
-
-    <button onclick="populateDiv()">Sum</button>
-    <div id="finalsum"></div>
-
-</body>
+    <body>
+        <input id="First" type="text" placeholder="First Number"> <br>
+        <input id="Second" type="text" placeholder="Second Number"><br>
+        <button onclick="PopulateDiv()">Sum</button> <br>
+        <div id="Finalsum">Ans Is</div>
+    </body>
 </html>
