@@ -1,17 +1,25 @@
-<!DOCTYPE html>
-<br lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<input id="first_number" type="text" placeholder="first number"><br>
 
-<input id="Second_number type="text" placeholder="second number"><br>
+<html>
 
-<button onclick="populateDiv()">Sum</button>
-<div id="finalsum">Result</div>
-<script src="script.js"></script>
+
+    <script>
+        function populateDiv(){
+                const a=document.getElementById("first_number").value;
+                const b=document.getElementById("Second_number").value;  
+                const element=document.getElementById("finalsum");
+
+                element.innerHTML=parseInt(a)+parseInt(b)
+
+
+        }
+    </script>
+<body>
+    <input id="first_number" type="text" placeholder="first number"><br>
+
+    <input id="Second_number" type="text" placeholder="second number"><br>
+
+    <button onclick="populateDiv()">Sum</button>
+    <div id="finalsum"></div>
+
 </body>
 </html>
