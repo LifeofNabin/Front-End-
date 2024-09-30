@@ -5,7 +5,7 @@ body{
     justify-content: center;
     background-color: greenyellow;
 }
-#P{
+#P,#I,#Y{
     background-color: rgb(168, 168, 199);
 
 }
