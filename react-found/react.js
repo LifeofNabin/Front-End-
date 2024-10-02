@@ -4,4 +4,5 @@ function addUser() {
   const Cred = document.getElementById("Cred");
   console.log(name);
   console.log(password);
+  Cred.innerHTML = "abcd";
 }
